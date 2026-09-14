@@ -63,3 +63,48 @@ Created a Featured Products section with a heading, description, and multiple pr
 - Learned how to handle a rejected push
 - Used `git pull origin main --rebase`
 - Successfully pushed changes to GitHub
+
+
+# React Practice - Day 3
+
+## What I Learned Today
+
+### 1. useState
+
+Learned how to use `useState` to store and update data in a React component.
+
+### 2. State Lifting
+
+Learned how to pass state and state update functions from a parent component to child components using props.
+
+### 3. Array State
+
+Learned how to store multiple products inside an array state.
+
+### 4. Spread Operator
+
+Used the spread operator `...` to keep existing cart items while adding a new product.
+
+### 5. filter()
+
+Used `filter()` to remove a specific product from the cart.
+
+### 6. Shopping Cart
+
+Created a functional shopping cart where products can be added and removed.
+
+### 7. React Router
+
+Created a separate Cart page and used React Router to navigate between Home and Cart.
+
+### 8. Dynamic Cart Count
+
+Displayed the number of products in the cart dynamically in the navbar.
+
+## Git & GitHub
+
+* Created a commit for the cart functionality
+* Used `git pull --rebase origin main`
+* Resolved remote/local repository differences
+* Successfully pushed the updated project to GitHub
+
