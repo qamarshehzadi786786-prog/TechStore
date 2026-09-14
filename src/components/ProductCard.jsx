@@ -1,4 +1,4 @@
-function ProductCard({ image, name, description, price }) {
+function ProductCard({ image, name, description, price ,setCartCount,setCart }) {
   return (
     <div>
       <section className="w-60 border-2 rounded-xl mt-20 ml-10 overflow-hidden shadow-md hover:shadow-xl transition">
@@ -23,7 +23,18 @@ function ProductCard({ image, name, description, price }) {
             {price}
           </p>
 
-          <button className="bg-blue-700 text-white px-4 py-2 rounded-lg mt-3 hover:bg-blue-800">
+          <button onClick={() => {
+              setCartCount((prev) => prev + 1);
+              setCart((prevCart)=>[
+                ...prevCart,{
+                   id: Date.now(),
+                  image:image,
+                  name:name,
+                  description:description,
+                  price:price,
+                }
+              ])
+            }} className="bg-blue-700 text-white px-4 py-2 rounded-lg mt-3 hover:bg-blue-800">
             Add to Cart
           </button>
 
