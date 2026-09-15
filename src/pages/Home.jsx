@@ -4,6 +4,8 @@ import image from "../assets/macbook.jfif"
 import smartphone from "../assets/smartphone.jpg"
 import earbuds from "../assets/earbuds.jfif"
 import watch from "../assets/watch.jfif"
+import { FaBoxOpen, FaTags, FaHeadset } from "react-icons/fa";
+import { useEffect, useState } from 'react';
 // import { useState } from 'react';
 
 const Products=[ {
@@ -44,6 +46,28 @@ const Products=[ {
 
 
  function Home({setCartCount,setCart}) {
+ const [products, setProducts] = useState(0);
+const [brands, setBrands] = useState(0);
+
+useEffect(() => {
+  if (products >= 10000) return;
+
+  const timer = setTimeout(() => {
+    setProducts((prev) => prev + 100);
+  }, 10);
+
+  return () => clearTimeout(timer);
+}, [products]);
+
+useEffect(() => {
+  if (brands >= 50) return;
+
+  const timer = setTimeout(() => {
+    setBrands((prev) => prev + 1);
+  }, 30);
+
+  return () => clearTimeout(timer);
+}, [brands]);
   return (
     <div>
       <Hero/>
@@ -68,7 +92,38 @@ const Products=[ {
   ))}
 
 </div>
+
+
+{/* choose */}
+<div className="text-center mt-10">
+  <h1 className="text-4xl">WHY CHOOSE TECHSTORE?</h1>
+<p className="">We make technology simple, reliable, and accessible for everyone.</p>
+<div className="bg-blue-800 w-full h-70 mt-10 flex align-center justify-center items-center  gap-90 text-white">
+ <div className="text-center flex flex-col items-center ">
+  <FaBoxOpen size={30} />
+    <h1>{products}+</h1>
+    <p>Products Available</p>
+  </div>
+  
+   <div className="text-center flex flex-col items-center ">
+    <FaTags size={30} />
+    <h1>{brands}+</h1>
+    <p>Trusted Brands</p>
+  </div>
+
+  <div className="text-center flex flex-col items-center ">
+    <FaHeadset size={30} />
+    <h1>24/7</h1>
+    <p>Customer Support</p>
+  </div>
+
+</div>
+</div>
+
       
+
+
+
     </div>
   )
 }
