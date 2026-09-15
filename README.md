@@ -108,3 +108,51 @@ Displayed the number of products in the cart dynamically in the navbar.
 * Resolved remote/local repository differences
 * Successfully pushed the updated project to GitHub
 
+
+
+
+# React Practice - Day 4
+
+## What I Learned Today
+
+### 1. useState
+
+Used `useState` to store and update counter values in React.
+
+### 2. useEffect
+
+Learned how `useEffect` runs code when a component loads or when a state value changes.
+
+### 3. setTimeout
+
+Used `setTimeout` to create animated counters that increase step by step.
+
+### 4. Cleanup
+
+Used `clearTimeout` to clean up the timer when the component updates or unmounts.
+
+### 5. Animated Counters
+
+Created animated statistics for:
+
+* 📦 10K+ Products Available
+* 🏷️ 50+ Trusted Brands
+* 🎧 24/7 Customer Support
+
+### 6. React Icons
+
+Used React Icons to add icons to the statistics section.
+
+### 7. New TechStore Section
+
+Created a **Why Choose TechStore?** section with statistics and animated counters.
+
+## Git & GitHub
+
+* Staged changes using `git add`
+* Created a commit using `git commit`
+* Learned how to handle a rejected push
+* Used `git pull --rebase origin main`
+* Successfully pushed the updated project to GitHub
+
+
