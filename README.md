@@ -27,39 +27,6 @@ A React practice project built while learning and practicing modern web developm
 
 ## Project Status
 
-
-# React Practice - Day 5
-
-## What I Learned Today
-
-### 1. useState
-Used `useState` to store the user's selected option.
-
-### 2. onClick
-Used `onClick` to handle button clicks and update the selected option.
-
-### 3. Conditional Rendering
-Learned how to show content only when a condition is true.
-
-### 4. Smart Tech Finder
-Created a **Smart Tech Finder** section where users can select what they are shopping for:
-- 💻 Work & Study
-- 🎮 Gaming
-- 🎨 Creative Work
-- 📱 Everyday Use
-
-### 5. Reusable UI
-Practiced creating interactive buttons with Tailwind CSS.
-
-## Git & GitHub
-- Added and committed the Smart Tech Finder section
-- Used `git pull --rebase origin main`
-- Updated the project with GitHub
-🚧 Currently in development — practicing React step by step by building a TechStore website.
-
-
-
-
 # React Practice - Day 2
 
 ## What I Learned Today
@@ -182,5 +149,34 @@ Created a **Why Choose TechStore?** section with statistics and animated counter
 * Learned how to handle a rejected push
 * Used `git pull --rebase origin main`
 * Successfully pushed the updated project to GitHub
+
+# React Practice - Day 5
+
+## What I Learned Today
+
+### 1. useState
+Used `useState` to store the user's selected option.
+
+### 2. onClick
+Used `onClick` to handle button clicks and update the selected option.
+
+### 3. Conditional Rendering
+Learned how to show content only when a condition is true.
+
+### 4. Smart Tech Finder
+Created a **Smart Tech Finder** section where users can select what they are shopping for:
+- 💻 Work & Study
+- 🎮 Gaming
+- 🎨 Creative Work
+- 📱 Everyday Use
+
+### 5. Reusable UI
+Practiced creating interactive buttons with Tailwind CSS.
+
+## Git & GitHub
+- Added and committed the Smart Tech Finder section
+- Used `git pull --rebase origin main`
+- Updated the project with GitHub
+🚧 Currently in development — practicing React step by step by building a TechStore website.
 
 
