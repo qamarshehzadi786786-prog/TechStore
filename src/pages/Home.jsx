@@ -6,6 +6,7 @@ import earbuds from "../assets/earbuds.jfif"
 import watch from "../assets/watch.jfif"
 import { FaBoxOpen, FaTags, FaHeadset } from "react-icons/fa";
 import { useEffect, useState } from 'react';
+import TechFinder from "../components/TechFinder.jsx";
 // import { useState } from 'react';
 
 const Products=[ {
@@ -120,6 +121,7 @@ useEffect(() => {
 </div>
 </div>
 
+<TechFinder />
       
 
 
