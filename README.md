@@ -180,3 +180,33 @@ Practiced creating interactive buttons with Tailwind CSS.
 🚧 Currently in development — practicing React step by step by building a TechStore website.
 
 
+# React Practice - Day 6
+
+## What I Learned Today
+
+### 1. useState
+Used `useState` to store the user's selected option.
+
+### 2. onClick
+Used `onClick` to handle button clicks and update the selected option.
+
+### 3. Conditional Rendering
+Learned how to display different content based on the selected option.
+
+### 4. Smart Tech Finder
+Created a **Smart Tech Finder** feature where users can select:
+- 💻 Work & Study
+- 🎮 Gaming
+- 🎨 Creative Work
+- 📱 Everyday Use
+
+### 5. Interactive UI
+Created interactive buttons using React and Tailwind CSS.
+
+## Git & GitHub
+- Created a new Smart Tech Finder feature
+- Committed changes using Git
+- Used `git pull --rebase origin main`
+- Successfully pushed changes to GitHub
+
+
