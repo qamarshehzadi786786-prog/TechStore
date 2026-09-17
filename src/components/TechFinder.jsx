@@ -50,7 +50,32 @@ function TechFinder() {
           </div>
         </div>
       </section>
+       {selected==="Gaming"&&(
+      <p>
+       We recommend gaming laptops, keyboards and gaming accessories.
+       </p>
+    )}
+
+    {selected==="Work & Study" &&(
+      <p>
+We recommend laptops, monitors and productivity accessories.
+      </p>
+    )}
+
+     {selected==="Creative Work" &&(
+      <p>
+We recommend powerful laptops, displays and creative accessories.
+      </p>
+    )}
+
+     {selected==="Everyday Use" &&(
+      <p>
+We recommend smartphones, earbuds and smart everyday gadgets.
+      </p>
+    )}
     </div>
+
+   
   );
 }
 
