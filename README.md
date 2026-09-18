@@ -210,3 +210,14 @@ Created interactive buttons using React and Tailwind CSS.
 - Successfully pushed changes to GitHub
 
 
+
+Day 7
+### What I Learned
+
+* Built an interactive **TechFinder** section using React `useState`
+* Used conditional rendering to show recommendations based on the selected category
+* Created interactive buttons for different shopping needs
+* Improved the UI using **Tailwind CSS**
+* Added styled recommendation cards with category-specific suggestions
+* Practiced React component structure and props
+
