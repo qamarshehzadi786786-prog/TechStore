@@ -50,29 +50,110 @@ function TechFinder() {
           </div>
         </div>
       </section>
-       {selected==="Gaming"&&(
-      <p>
-       We recommend gaming laptops, keyboards and gaming accessories.
-       </p>
-    )}
+      
+```jsx
+{selected && (
+  <div className="max-w-2xl mx-auto mt-8 px-6">
+    <div className="bg-blue-800 border border-gray-200 rounded-2xl shadow-lg p-8 text-center">
 
-    {selected==="Work & Study" &&(
-      <p>
-We recommend laptops, monitors and productivity accessories.
-      </p>
-    )}
+      <div className="text-5xl mb-4">
+        {selected === "Gaming" && "🎮"}
+        {selected === "Work & Study" && "💻"}
+        {selected === "Creative Work" && "🎨"}
+        {selected === "Everyday Use" && "📱"}
+      </div>
 
-     {selected==="Creative Work" &&(
-      <p>
-We recommend powerful laptops, displays and creative accessories.
-      </p>
-    )}
+      <h3 className="text-2xl font-bold text-white mb-3">
+        {selected}
+      </h3>
 
-     {selected==="Everyday Use" &&(
-      <p>
-We recommend smartphones, earbuds and smart everyday gadgets.
-      </p>
-    )}
+      {selected === "Gaming" && (
+        <>
+          <p className="text-white mb-4">
+            We recommend gaming laptops, keyboards and gaming accessories.
+          </p>
+
+          <div className="flex justify-center gap-3 flex-wrap">
+            <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+              Gaming Laptops
+            </span>
+            <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+              Keyboards
+            </span>
+            <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+              Gaming Accessories
+            </span>
+          </div>
+        </>
+      )}
+
+      {selected === "Work & Study" && (
+        <>
+          <p className="text-white mb-4">
+            We recommend laptops, monitors and productivity accessories.
+          </p>
+
+          <div className="flex justify-center gap-3 flex-wrap">
+            <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+              Laptops
+            </span>
+            <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+              Monitors
+            </span>
+            <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+              Accessories
+            </span>
+          </div>
+        </>
+      )}
+
+      {selected === "Creative Work" && (
+        <>
+          <p className="text-white mb-4">
+            We recommend powerful laptops, displays and creative accessories.
+          </p>
+
+          <div className="flex justify-center gap-3 flex-wrap">
+            <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+              Powerful Laptops
+            </span>
+            <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+              Displays
+            </span>
+            <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+              Creative Accessories
+            </span>
+          </div>
+        </>
+      )}
+
+      {selected === "Everyday Use" && (
+        <>
+          <p className="text-white mb-4">
+            We recommend smartphones, earbuds and smart everyday gadgets.
+          </p>
+
+          <div className="flex justify-center gap-3 flex-wrap">
+            <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+              Smartphones
+            </span>
+            <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+              Earbuds
+            </span>
+            <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+              Smart Gadgets
+            </span>
+          </div>
+        </>
+      )}
+
+    </div>
+  </div>
+)}
+```
+
+
+
     </div>
 
    
