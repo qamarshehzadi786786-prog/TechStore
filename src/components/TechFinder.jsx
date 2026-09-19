@@ -51,7 +51,7 @@ function TechFinder() {
         </div>
       </section>
       
-```jsx
+
 {selected && (
   <div className="max-w-2xl mx-auto mt-8 px-6">
     <div className="bg-blue-800 border border-gray-200 rounded-2xl shadow-lg p-8 text-center">
@@ -150,7 +150,7 @@ function TechFinder() {
     </div>
   </div>
 )}
-```
+
 
 
 

@@ -8,7 +8,7 @@ import { FaBoxOpen, FaTags, FaHeadset } from "react-icons/fa";
 import { useEffect, useState } from 'react';
 import TechFinder from "../components/TechFinder.jsx";
 // import { useState } from 'react';
-
+import techVideo from "../assets/1.mp4";
 const Products=[ {
     id: 1,
     image: image,
@@ -123,6 +123,26 @@ useEffect(() => {
 
 <TechFinder />
       
+
+
+<section className="w-full py-12 bg-gray-50 text-center">
+
+  <h2 className="text-3xl font-bold text-blue-800 mb-8">
+    Explore the World of Technology
+  </h2>
+
+<div className="w-full">
+  <video
+    className="w-full h-[500px] object-cover "
+    src={techVideo}
+    autoPlay
+    muted
+    loop
+    controls
+  ></video>
+</div>
+
+</section>
 
 
 
