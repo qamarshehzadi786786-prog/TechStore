@@ -221,3 +221,15 @@ Day 7
 * Added styled recommendation cards with category-specific suggestions
 * Practiced React component structure and props
 
+
+Day 8
+
+### What I Learned
+
+* Built an interactive **TechFinder** section using React `useState`
+* Used conditional rendering for different shopping categories
+* Improved the recommendation section with styled cards
+* Added a **technology video section** to the homepage
+* Used a local `.mp4` video file from the React assets folder
+* Practiced responsive layouts using **Tailwind CSS**
+
