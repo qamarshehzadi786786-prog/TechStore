@@ -233,3 +233,14 @@ Day 8
 * Used a local `.mp4` video file from the React assets folder
 * Practiced responsive layouts using **Tailwind CSS**
 
+
+## Day 9 – Footer & React Practice
+
+* Built a responsive Footer component for TechStore
+* Used Tailwind CSS to style the Footer
+* Added Quick Links, Categories, and Contact information
+* Integrated the Footer into the main App component
+* Practiced React component structure and imports
+* Updated the project README
+* Practiced Git and GitHub by committing and pushing changes
+
