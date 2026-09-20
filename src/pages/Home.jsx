@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react';
 import TechFinder from "../components/TechFinder.jsx";
 // import { useState } from 'react';
 import techVideo from "../assets/1.mp4";
+
 const Products=[ {
     id: 1,
     image: image,
