@@ -27,6 +27,22 @@ A React practice project built while learning and practicing modern web developm
 
 ## Project Status
 
+
+
+### Day 10 – Product Page
+
+Today I worked on the Product Page of TechStore.
+
+* Created a separate Product page using React.
+* Connected the Product page with React Router.
+* Used `useState` to manage the selected product category.
+* Used `onClick` event to select different categories.
+* Added product images from the `src/assets` folder.
+* Created product cards with images, names, descriptions, and prices.
+* Practiced importing image files into React components.
+* Pushed the updated Product Page and assets to GitHub.
+
+
 # React Practice - Day 2
 
 ## What I Learned Today
