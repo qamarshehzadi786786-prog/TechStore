@@ -4,6 +4,7 @@ import Cart from "./pages/Cart";
 import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Footer from "./components/Footer";
+import Product from "./pages/Product";
 
 function Practice() {
   const [cartCount, setCartCount] = useState(0);
@@ -45,9 +46,17 @@ function Practice() {
             />
           }
         />
+        <Route path="/product" element={<Product />} />
+          
+        
+
+      
       </Routes>
 
       <Footer />
+
+
+     
     </div>
   );
 }
