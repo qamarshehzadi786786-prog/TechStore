@@ -260,3 +260,14 @@ Day 8
 * Updated the project README
 * Practiced Git and GitHub by committing and pushing changes
 
+
+### Day 10 – Phone Products 📱
+
+* Added a **Phones** category to the Product page
+* Created phone product cards with names, descriptions, and prices
+* Used `useState` and `onClick` for category selection
+* Used conditional rendering to show phone products when the category is selected
+* Practiced React state management and event handling
+* Pushed the latest project updates to GitHub
+
+
