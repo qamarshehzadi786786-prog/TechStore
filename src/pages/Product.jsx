@@ -1,11 +1,14 @@
 import React from 'react'
 import { useState } from 'react';
 import macbook from "../assets/macbook.jfif";
+import product3 from "../assets/product3.jfif"
+import product2 from "../assets/product2.jfif"
+import product1 from "../assets/product1.jpg"
 
 
-function Product() {
+function Product({ setCart }) {
 
-  const [selectedCategory, setSelectedCategory] = useState("Laptops");
+  const [selectedCategory, setSelectedCategory] = useState("");
 
   return (
 
@@ -99,158 +102,230 @@ function Product() {
 
       {/* Products Section */}
 
-      <section className="py-16 px-6">
 
-        <h2 className="text-3xl font-bold text-center">
-          Explore Our Products
-        </h2>
+<section className="py-16 px-6">
 
-        <p className="text-gray-600 text-center mt-3">
-          Choose from our latest technology and find the perfect product for you.
-        </p>
+  <h2 className="text-3xl font-bold text-center">
+    Explore Our Products
+  </h2>
 
+  <p className="text-gray-600 text-center mt-3">
+    Choose from our latest technology and find the perfect product for you.
+  </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mt-10">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mt-10">
 
+    {selectedCategory === "Laptops" && (
 
-          {/* Product 1 */}
+      <>
 
-          <div className="border rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+        {/* Product 1 */}
 
-            <div className="h-52 flex items-center justify-center bg-gray-50">
+        <div className="border rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
 
-              <img
-                src={macbook}
-                alt="MacBook Air M2"
-                className="max-h-44 object-contain"
-              />
+          <div className="h-52 flex items-center justify-center bg-gray-50">
 
-            </div>
-
-
-            <div className="p-5">
-
-              <h3 className="text-xl font-semibold">
-                MacBook Air M2
-              </h3>
-
-              <p className="text-gray-500 mt-2">
-                Powerful laptop for work and study.
-              </p>
-
-              <p className="text-blue-600 font-bold text-lg mt-4">
-                $999
-              </p>
-
-            </div>
+            <img
+              src={macbook}
+              alt="MacBook Air M2"
+              className="max-h-44 object-contain"
+            />
 
           </div>
 
+          <div className="p-5">
 
-          {/* Product 2 */}
+            <h3 className="text-xl font-semibold">
+              MacBook Air M2
+            </h3>
 
-          <div className="border rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+            <p className="text-gray-500 mt-2">
+              Powerful laptop for work and study.
+            </p>
 
-            <div className="h-52 flex items-center justify-center bg-gray-50">
+            <p className="text-blue-600 font-bold text-lg mt-4">
+              $999
+            </p>
 
-              <img
-                src={macbook}
-                alt="Dell XPS 13"
-                className="max-h-44 object-contain"
-              />
-
-            </div>
-
-
-            <div className="p-5">
-
-              <h3 className="text-xl font-semibold">
-                Dell XPS 13
-              </h3>
-
-              <p className="text-gray-500 mt-2">
-                Premium performance for professionals.
-              </p>
-
-              <p className="text-blue-600 font-bold text-lg mt-4">
-                $1199
-              </p>
-
-            </div>
-
-          </div>
-
-
-          {/* Product 3 */}
-
-          <div className="border rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-
-            <div className="h-52 flex items-center justify-center bg-gray-50">
-
-              <img
-                src={macbook}
-                alt="HP Spectre"
-                className="max-h-44 object-contain"
-              />
-
-            </div>
-
-
-            <div className="p-5">
-
-              <h3 className="text-xl font-semibold">
-                HP Spectre
-              </h3>
-
-              <p className="text-gray-500 mt-2">
-                Elegant design with powerful performance.
-              </p>
-
-              <p className="text-blue-600 font-bold text-lg mt-4">
-                $1099
-              </p>
-
-            </div>
-
-          </div>
-
-
-          {/* Product 4 */}
-
-          <div className="border rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-
-            <div className="h-52 flex items-center justify-center bg-gray-50">
-
-              <img
-                src={macbook}
-                alt="Lenovo ThinkPad"
-                className="max-h-44 object-contain"
-              />
-
-            </div>
-
-
-            <div className="p-5">
-
-              <h3 className="text-xl font-semibold">
-                Lenovo ThinkPad
-              </h3>
-
-              <p className="text-gray-500 mt-2">
-                Reliable technology for everyday work.
-              </p>
-
-              <p className="text-blue-600 font-bold text-lg mt-4">
-                $899
-              </p>
-
-            </div>
+            <button
+              onClick={() =>
+                setCart((prev) => [
+                  ...prev,
+                  {
+                    name: "MacBook Air M2",
+                    price: "$999",
+                    image: macbook,
+                    description: "Powerful laptop for work and study."
+                  }
+                ])
+              }
+              className="mt-4 w-full bg-blue-800 text-white py-2 rounded-lg hover:bg-blue-700"
+            >
+              Add to Cart
+            </button>
 
           </div>
 
         </div>
 
-      </section>
+
+        {/* Product 2 */}
+
+        <div className="border rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+
+          <div className="h-52 flex items-center justify-center bg-gray-50">
+
+            <img
+              src={product3}
+              alt="Dell XPS 13"
+              className="max-h-44 object-contain"
+            />
+
+          </div>
+
+          <div className="p-5">
+
+            <h3 className="text-xl font-semibold">
+              Dell XPS 13
+            </h3>
+
+            <p className="text-gray-500 mt-2">
+              Premium performance for professionals.
+            </p>
+
+            <p className="text-blue-600 font-bold text-lg mt-4">
+              $1199
+            </p>
+
+            <button
+              onClick={() =>
+                setCart((prev) => [
+                  ...prev,
+                  {
+                    name: "Dell XPS 13",
+                    price: "$1199",
+                    image: macbook,
+                    description: "Premium performance for professionals."
+                  }
+                ])
+              }
+              className="mt-4 w-full bg-blue-800 text-white py-2 rounded-lg hover:bg-blue-700"
+            >
+              Add to Cart
+            </button>
+
+          </div>
+
+        </div>
+
+
+        {/* Product 3 */}
+
+        <div className="border rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+
+          <div className="h-52 flex items-center justify-center bg-gray-50">
+
+            <img
+              src={product2}
+              alt="HP Spectre"
+              className="max-h-44 object-contain"
+            />
+
+          </div>
+
+          <div className="p-5">
+
+            <h3 className="text-xl font-semibold">
+              HP Spectre
+            </h3>
+
+            <p className="text-gray-500 mt-2">
+              Elegant design with powerful performance.
+            </p>
+
+            <p className="text-blue-600 font-bold text-lg mt-4">
+              $1099
+            </p>
+
+            <button
+              onClick={() =>
+                setCart((prev) => [
+                  ...prev,
+                  {
+                    name: "HP Spectre",
+                    price: "$1099",
+                    image: macbook,
+                    description: "Elegant design with powerful performance."
+                  }
+                ])
+              }
+              className="mt-4 w-full bg-blue-800 text-white py-2 rounded-lg hover:bg-blue-700"
+            >
+              Add to Cart
+            </button>
+
+          </div>
+
+        </div>
+
+
+        {/* Product 4 */}
+
+        <div className="border rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+
+          <div className="h-52 flex items-center justify-center bg-gray-50">
+
+            <img
+              src={product1}
+              alt="Lenovo ThinkPad"
+              className="max-h-44 object-contain"
+            />
+
+          </div>
+
+          <div className="p-5">
+
+            <h3 className="text-xl font-semibold">
+              Lenovo ThinkPad
+            </h3>
+
+            <p className="text-gray-500 mt-2">
+              Reliable technology for everyday work.
+            </p>
+
+            <p className="text-blue-600 font-bold text-lg mt-4">
+              $899
+            </p>
+
+            <button
+              onClick={() =>
+                setCart((prev) => [
+                  ...prev,
+                  {
+                    name: "Lenovo ThinkPad",
+                    price: "$899",
+                    image: macbook,
+                    description: "Reliable technology for everyday work."
+                  }
+                ])
+              }
+              className="mt-4 w-full bg-blue-800 text-white py-2 rounded-lg hover:bg-blue-700"
+            >
+              Add to Cart
+            </button>
+
+          </div>
+
+        </div>
+
+      </>
+
+    )}
+
+  </div>
+
+</section>
+
 
     </div>
 

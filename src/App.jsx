@@ -46,7 +46,10 @@ function Practice() {
             />
           }
         />
-        <Route path="/product" element={<Product />} />
+       <Route
+  path="/product"
+  element={<Product setCart={setCart} />}
+/>
           
         
 
