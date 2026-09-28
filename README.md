@@ -28,6 +28,18 @@ A React practice project built while learning and practicing modern web developm
 ## Project Status
 
 
+### Day 11 – Wearable Products ⌚
+
+* Added a **Wearables** category to the Product page
+* Created wearable product cards with names, descriptions, and prices
+* Added products like Apple Watch, Samsung Galaxy Watch, Google Pixel Watch, and Fitbit
+* Added **Add to Cart** functionality for wearable products
+* Used React state and conditional rendering for category selection
+* Practiced working with product images and reusable product card structure
+* Pushed the latest updates to GitHub
+
+
+
 
 ### Day 10 – Product Page
 
