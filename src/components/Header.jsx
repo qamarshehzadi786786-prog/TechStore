@@ -12,7 +12,7 @@ function Header({ cartCount }) {
       <div className="flex items-center gap-10">
         <a href="/">Home</a>
         <Link to="/product">Product</Link>
-        <a href="#">About Us</a>
+      <a href="/about">About Us</a>
         <a href="#">Contact Us</a>
       </div>
 
