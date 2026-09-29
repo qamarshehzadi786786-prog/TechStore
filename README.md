@@ -282,4 +282,16 @@ Day 8
 * Practiced React state management and event handling
 * Pushed the latest project updates to GitHub
 
+### Day 11 – About Us Page 📖
+
+* Created a dedicated **About Us** page
+* Added Hero section with technology-themed background image
+* Added **Our Story** section
+* Added **Mission & Vision** section
+* Added **Our Values** section
+* Added **Why TechStore** section
+* Added final **Explore Products** CTA
+* Practiced React component structure and Tailwind CSS styling
+* Added the About Us route using React Router
+* Pushed the latest updates to GitHub
 
