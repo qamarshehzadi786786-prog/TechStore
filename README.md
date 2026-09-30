@@ -295,3 +295,18 @@ Day 8
 * Added the About Us route using React Router
 * Pushed the latest updates to GitHub
 
+### Day 12 – Contact Us Page & Website Completion 📩
+
+- Created a dedicated **Contact Us** page
+- Added a technology-themed Hero section
+- Added **Get In Touch** section
+- Added contact information cards
+- Added a complete contact form
+- Added a **Need Technology?** CTA section
+- Added a **Quick Help** section
+- Added active page underline in the Header
+- Completed the main pages of the TechStore website
+- Improved the overall website structure and navigation
+- Practiced React Router and Tailwind CSS
+- Pushed the latest updates to GitHub
+
