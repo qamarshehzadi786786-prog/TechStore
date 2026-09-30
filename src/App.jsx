@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import Footer from "./components/Footer";
 import Product from "./pages/Product";
 import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
 
 function Practice() {
   const [cartCount, setCartCount] = useState(0);
@@ -57,6 +58,11 @@ function Practice() {
   element={<AboutUs />}
 />  
 
+
+    <Route
+  path="/contact"
+  element={<ContactUs />}
+/>  
       
       </Routes>
 
